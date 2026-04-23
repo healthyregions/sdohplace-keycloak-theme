@@ -1,0 +1,8 @@
+{
+  "themes": [
+    {
+      "name": "sdohplace-discovery",
+      "types": ["login"]
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700;800&display=swap");
+
+:root {
+  --sdoh-violet: #7e1cc4;
+  --sdoh-violet-soft: #ece6f0;
+  --sdoh-peach: #ff9c77;
+  --sdoh-text: #1e1e1e;
+}
+
+html,
+body,
+.login-pf body,
+#kc-page-title,
+#kc-header-wrapper,
+#kc-content-wrapper,
+#kc-content,
+#kc-form,
+#kc-form-options,
+#kc-info,
+#kc-reset-password-form,
+#kc-register-form,
+#kc-login,
+#kc-header,
+.login-pf-page .card-pf,
+.login-pf-page .login-pf-signup {
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-color: var(--sdoh-violet-soft);
+  background-image:
+    url("../img/line16.svg"),
+    url("../img/line15.svg"),
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.82), rgba(236, 230, 240, 0.98) 52%);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: left top, right bottom, center;
+  background-size: 11rem, 11rem, cover;
+  color: var(--sdoh-text);
+}
+
+.login-pf,
+.login-pf body,
+.login-pf-page {
+  background-color: var(--sdoh-violet-soft) !important;
+  background-image:
+    url("../img/line16.svg"),
+    url("../img/line15.svg"),
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.82), rgba(236, 230, 240, 0.98) 52%) !important;
+  background-repeat: no-repeat, no-repeat, no-repeat !important;
+  background-position: left top, right bottom, center !important;
+  background-size: 11rem, 11rem, cover !important;
+}
+
+.login-pf-page {
+  min-height: 100vh;
+}
+
+.login-pf-page .card-pf {
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(202, 196, 208, 0.45);
+  background: rgba(255, 255, 255, 0.96);
+}
+
+#kc-header-wrapper {
+  display: none;
+}
+
+#kc-content-wrapper::before {
+  content: "";
+  display: block;
+  width: 5.5rem;
+  height: 5.5rem;
+  margin: 0 auto 0.75rem;
+  background-image: url("../img/place-project-logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+#kc-page-title {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 1.1rem;
+}
+
+#kc-page-title::after {
+  content: "The\A SDOH &\A Place Project";
+  white-space: pre-line;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  left: 0.2rem;
+  font-family: "Fredoka", sans-serif;
+  color: var(--sdoh-violet);
+  font-size: 2rem;
+  line-height: 1.35;
+  text-align: center;
+}
+
+body:has(#kc-register-form) #kc-page-title::after {
+  left: 2.2rem;
+}
+
+#kc-login,
+.login-pf-page .btn,
+.login-pf-page .btn-primary,
+.login-pf-page input[type="submit"],
+.login-pf-page button[type="submit"],
+.login-pf-page .pf-c-button.pf-m-primary {
+  background-color: var(--sdoh-violet) !important;
+  background-image: none !important;
+  border-color: var(--sdoh-violet) !important;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  color: #ffffff !important;
+}
+
+#kc-login:hover,
+.login-pf-page .btn:hover,
+.login-pf-page .btn-primary:hover,
+.login-pf-page input[type="submit"]:hover,
+.login-pf-page button[type="submit"]:hover,
+.login-pf-page .pf-c-button.pf-m-primary:hover {
+  background-color: #6e18ad !important;
+  background-image: none !important;
+  border-color: #6e18ad !important;
+  color: #ffffff !important;
+}
+
+a,
+.login-pf-page a {
+  color: var(--sdoh-violet);
+}
+
+.login-pf-page a:hover {
+  color: #6e18ad;
+}
+
+.login-pf-page .alert {
+  border-radius: 1rem;
+}
